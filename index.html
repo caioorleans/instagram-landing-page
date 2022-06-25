@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="./css/css.css">
+    <link rel="stylesheet" href="./css/toggle.css">
     <title>Instagram</title>
 </head>
+
 <body>
     <div class="instagram-wrapper">
         <div class="instagram-phone">
@@ -39,17 +42,24 @@
         </div>
     </div>
     <footer>
-        <label for="switch">
-            <input type="checkbox" id="switch"> Dark mode
+        <input type="checkbox" id="toggle_checkbox">
+
+        <label for="toggle_checkbox">
+            <div id="star">
+                <div class="star" id="star-1">★</div>
+                <div class="star" id="star-2">★</div>
+            </div>
+            <div id="moon"></div>
         </label>
     </footer>
 </body>
 <script>
     const $html = document.querySelector('html');
-    const $checkbox = document.querySelector('#switch');
+    const $checkbox = document.querySelector('#toggle_checkbox');
 
-    $checkbox.addEventListener('change', function(){
+    $checkbox.addEventListener('change', function () {
         $html.classList.toggle('dark-mode');
     })
 </script>
+
 </html>
