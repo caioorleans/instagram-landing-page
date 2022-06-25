@@ -165,11 +165,11 @@ footer{
 }
 
 .app-download:nth-child(1){
-    background-image: url('./img/app_store.png');
+    background-image: url('../img/app_store.png');
 }
 
 .app-download:nth-child(2){
-    background-image: url('./img/google_play.png');
+    background-image: url('../img/google_play.png');
 }
 
 @media(max-width: 1024px){
