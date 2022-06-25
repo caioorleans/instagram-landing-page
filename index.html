@@ -38,5 +38,18 @@
             </div>
         </div>
     </div>
+    <footer>
+        <label for="switch">
+            <input type="checkbox" id="switch"> Dark mode
+        </label>
+    </footer>
 </body>
+<script>
+    const $html = document.querySelector('html');
+    const $checkbox = document.querySelector('#switch');
+
+    $checkbox.addEventListener('change', function(){
+        $html.classList.toggle('dark-mode');
+    })
+</script>
 </html>
